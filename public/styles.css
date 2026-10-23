@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #0b0d14;
   --surface: #131726;
   --border: #232942;
@@ -130,7 +130,7 @@ footer { text-align: center; padding: 32px 16px; border-top: 1px solid var(--bor
 footer p { margin: 0; }
 
 @media (max-width: 720px) {
-  .nav nav a:not(.btn) { display: none; }
+  .nav nav a:not(.btn):not(.keep) { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
@@ -141,3 +141,18 @@ footer p { margin: 0; }
 .card ul.list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 7px; color: var(--muted); font-size: .95rem; }
 .card ul.list li { padding-left: 18px; position: relative; }
 .card ul.list li::before { content: "›"; position: absolute; left: 4px; color: var(--accent-2); font-weight: 700; }
+
+/* Mejoras: accesibilidad, anclas, objetivos táctiles y WhatsApp flotante */
+section[id] { scroll-margin-top: 76px; }
+:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 6px; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 30; padding: 10px 16px; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; }
+.skip:focus { top: 10px; }
+.links a, .quote, .extras summary, .info a { display: inline-flex; align-items: center; min-height: 44px; }
+.info a { min-height: 32px; }
+.info li br + a { margin-top: 2px; }
+.foot-links { margin-top: 10px !important; font-size: .85rem; }
+.foot-links a { color: var(--muted); text-decoration: none; }
+.foot-links a:hover { color: var(--text); }
+.wa-float { position: fixed; right: 16px; bottom: 16px; z-index: 20; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 8px 24px rgba(0, 0, 0, .45); transition: transform .15s; }
+.wa-float:hover { transform: scale(1.08); }
+@media (max-width: 720px) { .nav nav a.keep { display: inline; } }
