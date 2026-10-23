@@ -14,13 +14,20 @@
   <meta property="og:url" content="https://gugu-lab.web.app/">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="GuGu | Laboratorio Creativo®">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://gugu-lab.web.app/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo de GuGu | Laboratorio Creativo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://gugu-lab.web.app/img/og-image.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "GuGu | Laboratorio Creativo®",
     "url": "https://gugu-lab.web.app/",
+    "logo": "https://gugu-lab.web.app/img/logo.png",
+    "image": "https://gugu-lab.web.app/img/og-image.png",
     "founder": { "@type": "Person", "name": "Alexis Nicolás Hurtado" },
     "email": "alexis.nicolas.hurtado@outlook.com",
     "telephone": "+527204223213",
@@ -29,7 +36,8 @@
     "description": "Desarrollo de software, páginas web, menús e invitaciones digitales, recuperación de datos, videovigilancia, reparación de celulares y cursos."
   }
   </script>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0d14'/%3E%3Ctext x='50' y='66' font-size='52' font-family='Arial' font-weight='700' text-anchor='middle' fill='%237c5cff'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,7 +46,7 @@
 <body>
   <a class="skip" href="#paquetes">Ir al contenido</a>
   <header class="nav">
-    <a class="brand" href="#inicio">GuGu<span>®</span></a>
+    <a class="brand" href="#inicio" aria-label="GuGu Laboratorio Creativo, inicio"><img src="img/logo-sm.png" alt="" width="37" height="40"><span class="brand-text">GuGu<span>®</span></span></a>
     <nav>
       <a class="keep" href="#paquetes">Paquetes</a>
       <a href="#servicios">Servicios</a>
@@ -281,11 +289,12 @@
           <div class="links"><a href="https://sio-fs-tk.web.app/" target="_blank" rel="noopener">Ver sitio</a></div>
         </article>
         <article class="card project">
+          <img class="thumb" src="img/proyecto-invitacion-cumple-dino.webp" alt="Invitación digital de cumpleaños con temática de dinosaurios" width="1895" height="902" loading="lazy">
           <span class="tag">Invitación interactiva</span>
           <h3>Invitación de cumpleaños temática</h3>
-          <p>Cuenta regresiva, programa, mapa, confirmación de asistencia, minijuegos, música y panel de administración con PIN.</p>
+          <p>Invitación de cumpleaños con temática de dinosaurios: programa de la fiesta, reproductor de música, mapa y confirmación de asistencia.</p>
           <p class="tech">JavaScript · Firebase Hosting</p>
-          <div class="links"><a href="https://micumple-zaid-emmanuel-gugulab.web.app/" target="_blank" rel="noopener">Ver sitio</a></div>
+          <div class="links"><a href="https://mi-2do-cumple-zaid-gugulab.web.app/" target="_blank" rel="noopener">Ver sitio</a></div>
         </article>
       </div>
     </section>
@@ -302,6 +311,7 @@
 
     <section id="sobre-mi" class="section about">
       <h2>Sobre mí</h2>
+      <img class="about-photo" src="img/alexis-nicolas-hurtado.webp" alt="Alexis Nicolás Hurtado, Ingeniero en Sistemas Computacionales y fundador de GuGu | Laboratorio Creativo" width="827" height="911" loading="lazy">
       <p>Soy <strong>Alexis Nicolás Hurtado</strong>, Ingeniero en Sistemas Computacionales y fundador de <strong>GuGu | Laboratorio Creativo®</strong>. Combino ingeniería y creatividad para construir soluciones de software claras, útiles y bien cuidadas.</p>
     </section>
 
